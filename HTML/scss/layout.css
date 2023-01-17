@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Rajdhani";
+  src: url("../fonts/Rajdhani-Regular.eot");
+  src: url("../fonts/Rajdhani-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Rajdhani-Regular.woff2") format("woff2"), url("../fonts/Rajdhani-Regular.woff") format("woff"), url("../fonts/Rajdhani-Regular.ttf") format("truetype"), url("../fonts/Rajdhani-Regular.svg#Rajdhani-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.rajdhani-regular {
+  font-family: "Rajdhani" !important;
+}
+
+@font-face {
+  font-family: "Rajdhani_md";
+  src: url("../fonts/Rajdhani-Medium.eot");
+  src: url("../fonts/Rajdhani-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Rajdhani-Medium.woff2") format("woff2"), url("../fonts/Rajdhani-Medium.woff") format("woff"), url("../fonts/Rajdhani-Medium.ttf") format("truetype"), url("../fonts/Rajdhani-Medium.svg#Rajdhani-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.rajdhani-md {
+  font-family: "Rajdhani" !important;
+}
+
+@font-face {
+  font-family: "Rajdhani_lt";
+  src: url("../fonts/Rajdhani-Light.eot");
+  src: url("../fonts/Rajdhani-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Rajdhani-Light.woff2") format("woff2"), url("../fonts/Rajdhani-Light.woff") format("woff"), url("../fonts/Rajdhani-Light.ttf") format("truetype"), url("../fonts/Rajdhani-Light.svg#Rajdhani-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+.rajdhani-light {
+  font-family: "Rajdhani_lt" !important;
+}
+
+@font-face {
+  font-family: "Rajdhani_bd";
+  src: url("../fonts/Rajdhani-Bold.eot");
+  src: url("../fonts/Rajdhani-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rajdhani-Bold.woff2") format("woff2"), url("../fonts/Rajdhani-Bold.woff") format("woff"), url("../fonts/Rajdhani-Bold.ttf") format("truetype"), url("../fonts/Rajdhani-Bold.svg#Rajdhani-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.rajdhani-bold {
+  font-family: "Rajdhani_bd" !important;
+}
+
+@font-face {
+  font-family: "Rajdhani_sbold";
+  src: url("../fonts/Rajdhani-SemiBold.eot");
+  src: url("../fonts/Rajdhani-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rajdhani-SemiBold.woff2") format("woff2"), url("../fonts/Rajdhani-SemiBold.woff") format("woff"), url("../fonts/Rajdhani-SemiBold.ttf") format("truetype"), url("../fonts/Rajdhani-SemiBold.svg#Rajdhani-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+.rajdhani-sbold {
+  font-family: "Rajdhani_sbold" !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  background-color: white;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f3f0;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f3f0;
+}
+
+h3 {
+  font-family: "Rajdhani_bd";
+}
+
+h4, th {
+  font-family: "Rajdhani_sbold";
+}
+
+::-moz-placeholder {
+  font-family: "Rajdhani_lt";
+}
+
+:-ms-input-placeholder {
+  font-family: "Rajdhani_lt";
+}
+
+h5, ::placeholder {
+  font-family: "Rajdhani_lt";
+}
+
+p, td {
+  font-family: "Rajdhani";
+}
+
+td {
+  color: #646462;
+}
+
+.value-left, .value-right p {
+  color: #00abe1;
+}
+
+.widgets {
+  background-color: #00abe1;
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  text-align: center;
+}
+
+.form-select {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Rajdhani_sbold";
+}
+.form-select option {
+  font-family: "Rajdhani";
+}
+
+.table {
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+.table th {
+  background: #00abe1;
+  color: white;
+}
+.table th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+.table th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-show {
+  display: block;
+}
+
+.table-hide {
+  display: none;
+}
+
+.status-bar {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-bar-2 {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#project-name {
+  color: #00abe1;
+}
+
+#last-update {
+  color: #00abe1;
+}
+
+@media screen and (max-width: 774px) {
+  .align-widget {
+    display: flex;
+    flex-direction: column;
+  }
+  .widgets {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .status-bar {
+    width: 85%;
+  }
+  .status-bar-2 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=layout.css.map */

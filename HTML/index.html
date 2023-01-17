@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/layout.css">
+</head>
+<body>
+    <div class="container-fluid col-md-10 col-sm-12 mb-3 main-section">
+        <h1 class="mb-3">Company Logo</h1>
+        <h3 class="mb-0" id="project-name">Project Name</h3>
+        <p class="mt-0" id="company-name">Company Name</p>
+        <div class="row">
+            <div class="contents">
+                <div class="col-md-10 col-sm-12 d-flex justify-content-between mt-3 mb-3 align-widget">
+                    <div class="col-md-3 col-sm-12 mb-3 d-flex align-items-center flex-column widgets">
+                        <h3>01-01-2000</h4>
+                        <h5>Start Date</h5>
+                    </div>
+                    <div class="col-md-3 col-sm-12 mb-3 d-flex align-items-center flex-column widgets">
+                        <h3>01-01-2000</h4>
+                        <h5>End Date</h5>
+                    </div>
+                    <div class="col-md-3 col-sm-12 mb-3 d-flex align-items-center flex-column widgets">
+                        <h3>01-01-2000</h4>
+                        <h5>Tentative Completion date</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 mb-3">
+                    <form>
+                        <select id="select-value" class="form-select form-select-sm" onchange="setValue()">
+                          <option value="1" >Module 1</option>
+                          <option value="2">Module 2</option>
+                          <option value="3">Module 3</option>
+                        </select>
+                    </form> 
+                </div>
+                <div class="col-md-10 col-sm-12 table-show" id="table-1">
+                    <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th>Task Listing</th>
+                            <th>Task Owners</th>
+                            <th>Task Status</th>
+                            <th>Task Status in %</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>To be started</td>
+                            <td>10%</td>
+                          </tr>
+                          <tr>
+                            <td>Mary</td>
+                            <td>Moe</td>
+                            <td>In QA</td>
+                            <td>20%</td>
+                          </tr>
+                          <tr>
+                            <td>July</td>
+                            <td>Dooley</td>
+                            <td>In development</td>
+                            <td>60%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="col-md-10 col-sm-12 table-hide" id="table-2">
+                  <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th>Task Listing</th>
+                          <th>Task Owners</th>
+                          <th>Task Status</th>
+                          <th>Task Status in %</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Bilal John</td>
+                          <td>Doe</td>
+                          <td>To be started</td>
+                          <td>10%</td>
+                        </tr>
+                        <tr>
+                          <td>Mary</td>
+                          <td>Moe</td>
+                          <td>In development</td>
+                          <td>20%</td>
+                        </tr>
+                        <tr>
+                          <td>July</td>
+                          <td>Dooley</td>
+                          <td>In QA</td>
+                          <td>60%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <div class="col-md-10 col-sm-12 table-hide" id="table-3">
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th>Task Listing</th>
+                        <th>Task Owners</th>
+                        <th>Task Status</th>
+                        <th>Task Status in %</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Sagar Alias Jacky</td>
+                        <td>Doe</td>
+                        <td>In QA</td>
+                        <td>10%</td>
+                      </tr>
+                      <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>In development</td>
+                        <td>20%</td>
+                      </tr>
+                      <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>To be started</td>
+                        <td>60%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <h4 class="mb-2 mt-3">Project Tracker</h4>
+                <div class="col-md-10 col-sm-12 progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width:80%">
+                      <p class="mt-3"></p>
+                    </div>
+                    <div class="progress-bar bg-danger" role="progressbar" style="width:20%">
+                      <p class="mt-3">Delay</p>
+                    </div>
+                </div>
+                <div class="status-bar">
+                    <div class="value-left"><p>Start date</p></div>
+                    <div class="value-right"><p>End Date</p></div>
+                </div>
+                <div class="col-md-8 progress mt-3">
+                    <div class="progress-bar bg-success" role="progressbar" style="width:100%">
+                      <p class="mt-3"></p>
+                    </div>
+                </div>
+                <div class="status-bar-2">
+                    <div class="value-left"><p>Start date</p></div>
+                    <div class="value-right"><p>End Date</p></div>
+                </div>
+                <div class="col-md-10 col-sm-12 mt-3">
+                    <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Comments"></textarea>
+                </div>
+                <div class="col-md-10 col-sm-12 mt-3 footer">
+                  <p id="last-update">Last Updated on 01-01-2000 10:00 AM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById('select-value').value='1'
+      function setValue(){
+          let value = document.getElementById('select-value').value;
+         if (value=='1') {
+            document.getElementById("table-1").classList.add("table-show")
+            document.getElementById("table-1").classList.remove("table-hide")
+            document.getElementById("table-2").classList.add("table-hide")
+            document.getElementById("table-3").classList.add("table-hide")
+         }else if(value=='2'){
+            document.getElementById("table-2").classList.add("table-show")
+            document.getElementById("table-2").classList.remove("table-hide")
+            document.getElementById("table-1").classList.add("table-hide")
+            document.getElementById("table-3").classList.add("table-hide")
+
+         }else{
+            document.getElementById("table-3").classList.add("table-show")
+            document.getElementById("table-3").classList.remove("table-hide")
+            document.getElementById("table-2").classList.add("table-hide")
+            document.getElementById("table-1").classList.add("table-hide")
+         }
+      }
+    </script>
+</body>
+</html>
