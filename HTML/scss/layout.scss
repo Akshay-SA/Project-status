@@ -60,7 +60,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     min-height: 100%;
     background-color: white;
 }
@@ -68,6 +68,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f2f3f0;
+    padding: 30px;
 }
 .contents {
     display: flex;
@@ -144,12 +145,12 @@ td {
     display: none;
 }
 .status-bar {
-    width: 70%;
+    width: 87%;
     display: flex;
     justify-content: space-between;
 }
 .status-bar-2 {
-    width: 70%;
+    width: 87%;
     display: flex;
     justify-content: space-between;
 }
